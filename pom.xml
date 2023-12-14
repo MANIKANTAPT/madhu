@@ -9,6 +9,17 @@
   <name>JenkinsWar Maven Webapp</name>
   <url>http://maven.apache.org</url>
 
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <url>https://maven.pkg.github.com/MANIKANTAPT/madhu</url>
+    </repository>
+    <snapshotRepository>
+      <id>github-snapshots</id>
+      <url>https://maven.pkg.github.com/MANIKANTAPT/madhu</url>
+    </snapshotRepository>
+  </distributionManagement>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
