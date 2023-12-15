@@ -1,7 +1,7 @@
 pipeline{
     agent any
     tools{
-        maven 'local_maven'
+        maven 'maven'
     }
     stages{
         stage('Build'){
@@ -17,8 +17,7 @@ pipeline{
         }
         stage('Deploy to Server'){
             steps{
-                deploy adapters: [tomcat9(credentialsId: 'tomcat_credential', path: '', url: 'http://16.171.152.20:7070/')], contextPath: null, war: '**/*.war'
-            }
+deploy adapters: [tomcat9(credentialsId: '374b7370-3bbc-40d3-ba37-fc19465af689', path: '', url: 'http://15.206.179.200:9090/')], contextPath: null, war: '\'**/*.war\''            }
         }
     }
 }
