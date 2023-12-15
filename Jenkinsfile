@@ -25,7 +25,7 @@ pipeline {
             steps {
                 script {
                     // Define the path to the WAR file
-                    def warPath = "/var/lib/jenkins/workspace/pipeline2/target
+                    def warPath = "/var/lib/jenkins/workspace/pipeline2/target"
 "
                     
                     // Deploy to Tomcat
