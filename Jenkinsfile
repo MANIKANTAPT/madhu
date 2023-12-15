@@ -28,7 +28,7 @@ pipeline {
                     def warPath = "**/target/*.war"
                     
                     // Deploy to Tomcat
-                    deploy adapters: [tomcat9(credentialsId: '374b7370-3bbc-40d3-ba37-fc19465af689', path: '', url: 'http://15.206.179.200:9090/')], contextPath: null, war: warPath
+                    deploy adapters: [tomcat9(credentialsId: '374b7370-3bbc-40d3-ba37-fc19465af689', path: '/home/ec2-user/', url: 'http://15.206.179.200:9090/')], contextPath: null, war: warPath
                 }
             }
         }
